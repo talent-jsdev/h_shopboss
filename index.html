@@ -5,18 +5,8 @@
 
   <h2>HTML Forms</h2>
 
-  <form action="https://shopvinscan.com/">
-    <label for="appName">App Name:</label><br>
-    <input type="text" id="appName" name="appName" value="ShopBoss App"><br>
-    <label for="returnURL">Return URL:</label><br>
-    <input type="text" id="returnURL" name="returnURL" value="https://www.shopbosspro.com/sbpi2/api/vinscan"><br><br>
-    <input type="submit" value="Run">
-  </form>
-
-  <a href="https://shopvinscan.com/?appName=First+Shop&returnURL=https%3A%2F%2Fapp.autoserve1.com%2Fapi%2Fvin%2F&storeId=12cf9986-f100-4584-a104-0541cb754172&userId=4d2960e9-d4e2-423f-8531-86fc0c2f47da&from=dashboard\"
-    target="_blank">link text</a>
-
-    <button onclick="triggerAppOpen()">Go to App</button>
+  
+  <button onclick="triggerAppOpen()">Go to App</button>
 
   <script>
     var fallbackToStore = function () {
@@ -30,6 +20,16 @@
       // setTimeout(fallbackToStore, 250);
     };
   </script>
+
+<style>
+  button {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #4CAF50;
+    font-size: 40px;
+  }
+  </style>
+
 </body>
 
 </html>
