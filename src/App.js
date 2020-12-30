@@ -11,17 +11,21 @@ function App() {
 
   const prefix = "https://shopvinscan.com/";
   const addParam = () => {
-    if (paramNames.indexOf(pNameForAdd) > -1) {
-      alert("This parameter name is existed!");
+    if (pNameForAdd == "") {
+      alert("This parameter name is empty!");
     } else {
-      let names = paramNames.map((name) => name);
-      names.push(pNameForAdd);
-      let values = paramValues.map((name) => name);
-      values.push("");
-      setParamNames(names);
-      setParamValues(values);
+      if (paramNames.indexOf(pNameForAdd) > -1) {
+        alert("This parameter name is existed!");
+      } else {
+        let names = paramNames.map((name) => name);
+        names.push(pNameForAdd);
+        let values = paramValues.map((name) => name);
+        values.push("");
+        setParamNames(names);
+        setParamValues(values);
+      }
+      setPNameForAdd("");
     }
-    setPNameForAdd("");
   };
 
   const handlePNameForAddChange = (e) => {
