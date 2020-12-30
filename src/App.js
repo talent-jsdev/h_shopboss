@@ -103,7 +103,7 @@ function App() {
                   <Form.Label column sm="3">
                     Param Name
                   </Form.Label>
-                  <Col sm="6">
+                  <Col xs={8} sm="6">
                     <Form.Control
                       type="text"
                       placeholder="Param Name"
@@ -111,7 +111,7 @@ function App() {
                       onChange={handlePNameForAddChange}
                     />
                   </Col>
-                  <Col sm={3}>
+                  <Col xs={4} sm={3}>
                     <input
                       type="button"
                       className="btn btn-info add_param"
@@ -128,7 +128,7 @@ function App() {
                         <Form.Label column sm="3">
                           {pName}
                         </Form.Label>
-                        <Col sm="6">
+                        <Col xs={8} sm="6">
                           <Form.Control
                             type="text"
                             placeholder={pName}
@@ -136,7 +136,7 @@ function App() {
                             onChange={(e) => handleParamChange(e, index)}
                           />
                         </Col>
-                        <Col sm={3}>
+                        <Col xs={4} sm={3}>
                           <input
                             type="button"
                             className="btn btn-danger"
@@ -152,7 +152,7 @@ function App() {
                 </div>
               </div>
             </Form>
-            <div className="text-center mt-3">
+            <div className="text-center mt-4">
               <input
                 type="button"
                 value="Run App"
